@@ -20,6 +20,7 @@ class Home extends Component {
         let output = this.state.productData.filter((item) => {
             return item.name.toLowerCase().indexOf(keyword.toLowerCase())>-1
         })
+        console.log("checkit",output)
         this.setState({filteredData:output})
     }
 
